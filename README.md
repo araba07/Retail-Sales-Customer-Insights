@@ -16,8 +16,7 @@
 ├── README.md                       <- Executive summary, technical documentation, and insights.
 ├── nhs_data_cleaning_queries.sql   <- Production SQL scripts for ETL and aggregation.
 ├── data/                    <- Storage directory for raw data source files.
-│   ├── RTT-Overview-Timeseries-Including-Estimates-for-Missing-Trusts-Dec25-XLS-115K-6jPlxd.xlsx
-│   └── WLMDS-Demographics-Summary-to-25-January-2025-v1.xlsx
+│   └── data_source_info.md
 │
 └── dashboard/               <- Final visualisation files and interactive assets.
     ├─ retail_analytics_dashboard.pbix
