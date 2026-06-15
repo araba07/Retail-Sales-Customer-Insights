@@ -25,7 +25,7 @@
     └── nhs_waiting_list_dashboard_recording.gif
 ```
 ## My Dashboard 
-![Retail Interactive Dashboard Walkthrough](retail_analytics_dashboard.gif)
+![Retail Interactive Dashboard Walkthrough](Dashboard/retail_analytics_dashboard.gif)
 
 ## Data Source & Envirnment
 The analysis combines two distinct operational datasets to evaluate systemic performance:
