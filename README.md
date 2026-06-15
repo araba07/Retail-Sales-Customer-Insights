@@ -20,9 +20,8 @@
 │   └── WLMDS-Demographics-Summary-to-25-January-2025-v1.xlsx
 │
 └── dashboard/               <- Final visualisation files and interactive assets.
-    ├─ nhs waiting data prsentation.pbix
-    ├─ nhs_waiting_list_dashboard_recording.mp4
-    └── nhs_waiting_list_dashboard_recording.gif
+    ├─ retail_analytics_dashboard.pbix
+    └── retail_analytics_dashboard.gif
 ```
 ## My Dashboard 
 ![Retail Interactive Dashboard Walkthrough](dashboard/retail_analytics_dashboard.gif)
