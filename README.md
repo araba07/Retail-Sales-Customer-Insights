@@ -14,7 +14,7 @@
 ├── .gitignore                      <- Prevents tracking of temporary/local system files.
 ├── LICENSE                         <- MIT License detailing open-source usage permissions.
 ├── README.md                       <- Executive summary, technical documentation, and insights.
-├── nhs_data_cleaning_queries.sql   <- Production SQL scripts for ETL and aggregation.
+├── reatil_analytics.sql   <- Production SQL scripts for ETL and aggregation.
 ├── data/                    <- Storage directory for raw data source files.
 │   └── data_source_info.md
 │
