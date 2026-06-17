@@ -51,9 +51,9 @@ This section highlights the security lockdowns and configuration errors I faced 
 
 ### Stage 1: The Roadblocks
 1. **Error 1146 (Database Typo):** Experienced a syntax error due to an accidental table misspelling (`tranasctions` vs `transactions`).
-   * *Key Lesson:* Always meticulously audit `FROM` and `INTO` object names when a compiler returns a "table doesn't exist" exception.
+   * **Key Lesson:** Always meticulously audit `FROM` and `INTO` object names when a compiler returns a "table doesn't exist" exception.
 2. **Error 1290 (Security Lockdown - `--secure-file-priv`):** MySQL blocked file imports from unauthorized folders (like my standard Downloads folder) to prevent security risks.
-   * *Key Lesson:* To keep things secure, databases lock down where you can import files from. You cannot just load data from your normal Downloads folder; you have to use a specific, trusted "Uploads" folder. I used the command `SHOW VARIABLES LIKE "secure_file_priv";` on the server to instantly find the exact folder path MySQL required.
+   * **Key Lesson:** To keep things secure, databases lock down where you can import files from. You cannot just load data from your normal Downloads folder; you have to use a specific, trusted "Uploads" folder. I used the command `SHOW VARIABLES LIKE "secure_file_priv";` on the server to instantly find the exact folder path MySQL required.
 
 ### Stage 2: The Engineering Fixes
 When executing an advanced `LOAD DATA LOCAL INFILE` via MySQL Workbench, a severe system error was triggered: 
@@ -82,15 +82,15 @@ IGNORE 1 LINES;
 * **Market Share:** The United Kingdom emerged as the dominant purchasing market, driving the overwhelming majority of sales.
 * **Business Action:** This insights guides the Marketing Team to maximize their Return on Ad Spend (ROAS). Instead of spreading the budget thinly across global markets, ad spend should be heavily focused on hyper-targeted campaigns within the UK core audience.
 
-2. Supply Chain & Inventory Optimization
-Finding: Isolating the Top 10 best-selling products by volume explicitly highlighted the exact item configurations customers prefer to purchase.
+### 2. Supply Chain & Inventory Optimisation
+* **Finding:** Isolating the Top 10 best-selling products by volume explicitly highlighted the exact item configurations customers prefer to purchase.
 
-Business Action: This provides the Inventory & Supply Chain Teams with a concrete forecasting playbook. Knowing which items have massive velocity prevents stockouts on high-demand products, minimizes excess storage fees for slow-moving inventory, and optimizes warehouse space.
+* **Business Action:** This gives the Inventory & Supply Chain Teams a clear, data-driven strategy for forecasting demand. Knowing which items have massive velocity prevents stockouts on high-demand products, minimises excess storage fees for slow-moving inventory, and optimises warehouse space.
 
-3. Customer Retention & Loyalty Programs
-Finding: Querying customer lifetime value (CLV) grouped by individual spending records extracted the company’s absolute highest-value VIP customers.
+### 3. Customer Retention & Loyalty Programs
+* **Finding:** Querying customer lifetime value (CLV) grouped by individual spending records extracted the company’s absolute highest-value VIP customers.
 
-Business Action: The Customer Experience & Product Teams can feed these top-tier user IDs directly into specialized automated reward schemes, early-access sale algorithms, or white-glove loyalty tiers. Cultivating relationships with this specific customer segment maximizes long-term retention and spikes baseline profitability.
+* **Business Action:** The Customer Experience & Product Teams can feed these top-tier user IDs directly into specialised automated reward schemes, or early-access sale algorithms. Cultivating relationships with this specific customer segment maximises long-term retention and spikes baseline profitability.
 
-
+[← Back to Main Portfolio](https://github.com/araba07/Analytics-Portfolio)
 
