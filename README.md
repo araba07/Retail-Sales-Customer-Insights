@@ -64,12 +64,33 @@ To fix this security block on both sides, I used the Windows command line to cha
 1. **Logging into the MySQL Server via Command Prompt:** Opened the Windows Command Prompt to bypass the visual software, logging directly into the MySQL database with local file-loading permissions turned on:
    ```bash
    "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p --local-infile
+
+2. **Server Override Configuration:** Once logged into the MySQL command line, I ran a command to force the database server to accept local file uploads ```SET GLOBAL local_infile = 1;```
+3. **Successful Execution:** With the server updated, I ran the final data import query. It executed perfectly, successfully writing all rows into the database table without any data errors.
+```sql
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/online_retail_II.csv'
+INTO TABLE transactions
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES; 
+```
    
-## Conclusion & Findings
+## Strategic Insights & Business Value
+### 1. Financial Performance & Marketing Strategy
+* **Finding:** The analysis revealed that while **Gross Revenue** reached **~$20.8M**, the actual **Net Revenue** was **$19,287,250.55** after accounting for returns and cancellations. 
+* **Market Share:** The United Kingdom emerged as the dominant purchasing market, driving the overwhelming majority of sales.
+* **Business Action:** This insights guides the Marketing Team to maximize their Return on Ad Spend (ROAS). Instead of spreading the budget thinly across global markets, ad spend should be heavily focused on hyper-targeted campaigns within the UK core audience.
+
+2. Supply Chain & Inventory Optimization
+Finding: Isolating the Top 10 best-selling products by volume explicitly highlighted the exact item configurations customers prefer to purchase.
+
+Business Action: This provides the Inventory & Supply Chain Teams with a concrete forecasting playbook. Knowing which items have massive velocity prevents stockouts on high-demand products, minimizes excess storage fees for slow-moving inventory, and optimizes warehouse space.
+
+3. Customer Retention & Loyalty Programs
+Finding: Querying customer lifetime value (CLV) grouped by individual spending records extracted the company’s absolute highest-value VIP customers.
+
+Business Action: The Customer Experience & Product Teams can feed these top-tier user IDs directly into specialized automated reward schemes, early-access sale algorithms, or white-glove loyalty tiers. Cultivating relationships with this specific customer segment maximizes long-term retention and spikes baseline profitability.
 
 
-### Key Operational Insights
-
-
-### Key Technical Takeaways
 
